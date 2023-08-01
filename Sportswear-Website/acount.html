@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acount</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+            <a href="./index.html"><img src="./images/logo.png" width="120px"></a>
+            </div>
+            <nav>
+            <ul id="MenuItems">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./product.html">Product</a></li>
+                <li><a href="#">Abuot</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="./acount.html">Account</a></li>
+            </ul>
+            <a href="./cart.html"><img src="./images/cart.png" width="30px" height="30px"></a>
+            <img src="./images/menu.png" class="menu-icon"
+            onclick="handClick()">
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images/image1.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="handLogin()">Login</span>
+                            <span onclick="handRegister()">Register</span>
+                            <hr id="Indicator">
+                            <form id="LoginForm">
+                                <input class="ip" type="text" placeholder="Username">
+                                <input class="ip" type="password" placeholder="Password">
+                                <button type="submit" class="btn">Login</button>
+                                <a href="">Forgot Password</a>
+                            </form>
+                            <form id="RegForm">
+                                <input class="ip" type="text" placeholder="Username">
+                                <input class="ip" type="email" placeholder="Email">
+                                <input class="ip" type="password" placeholder="Password">
+                                <button type="submit" class="btn">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--Footer-->
+    <div class="products-form">
+        <div class="text-form">
+         <h4>SignUp For USA</h4>
+         <h1>Up To <span>80% off</span> - All t-shirt & Accessories</h1>
+         <button class="sale-btn">Buy Now</button>
+        </div>
+       </div>
+       <footer class="footer-prodcuts">
+        <div class="col">
+          <img class="logo-footer" src="./img/logo.png" alt="">
+          <h4>Contact</h4>
+          <p><strong>Address</strong>: Hà Nội, HCM, Bắc Ninh, Hà Nam</p>
+          <p><strong>Phone</strong>: 123456789++</p>
+          <p><strong>Hours</strong>: 9.00am - 9.00pm // Monday - Sunday</p>
+          <div class="flow">
+            <div class="icon-footer">
+            <h4>Follow Us</h4>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>About</h4>
+          <a href="">About Us</a>
+          <a href="">Delivery Information</a>
+          <a href="">Privary Policy</a>
+          <a href="">Terms & Conditions</a>
+          <a href="">Contact Us</a>
+        </div>
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="">Sign In</a>
+          <a href="">View Cart</a>
+          <a href="">My My</a>
+          <a href="">Check Order</a>
+          <a href="">Help</a>
+        </div>
+        <div class="col" style="margin-right: 30px;">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="row">
+          <img class="img-download" src="./images/app.jpg" alt="">
+          <img class="img-download" src="./images/play.jpg" alt="">
+          </div>
+          <p>Payments</p>
+        <img class="img-download" src="./images/pay.png" alt="">
+        </div>
+      </footer>
+      <div class="copyright">
+        <p>Copyright © – Phạm– Khắc - Điệp ®</p>
+      </div>
+
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function handRegister() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+        function handLogin() {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(000px)";
+
+        }
+    </script>
+    <script src="./main.js"></script>
+</body>
+</html>
